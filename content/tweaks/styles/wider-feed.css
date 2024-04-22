@@ -1,0 +1,20 @@
+/* code by kiophen */
+
+/* makes layout better for half-monitor windows or vertical monitors */
+.prose {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+hr {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+@media(min-width:1024px) {
+  .container {
+    max-width: 2024px;
+    grid-column-gap: 2vw;
+    padding: 0 20px;
+  }
+}

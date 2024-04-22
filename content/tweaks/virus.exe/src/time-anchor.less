@@ -1,0 +1,83 @@
+#conotifpopover {
+    .np-time-anchor-editor {
+        display: flex;
+        flex-direction: column;
+
+        .np-month-container {
+            position: relative;
+
+            .np-year-indicator {
+                background: linear-gradient(
+                    to right,
+                    rgb(var(--np-popover-bg)) 0%,
+                    rgb(var(--np-popover-bg)) 90%,
+                    rgb(var(--np-popover-bg) / 0) 100%,
+                );
+                position: absolute;
+                display: flex;
+                align-items: center;
+                top: 0;
+                bottom: 0;
+                padding: 0 0.3em;
+                left: 0;
+                z-index: 1;
+            }
+        }
+
+        .np-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5em;
+            padding: 0.5em;
+
+            .np-status {
+                font-size: 0.9em;
+            }
+
+            .np-apply-button {
+                background: rgb(var(--np-button-bg));
+                color: rgb(var(--np-button-fg));
+                padding: 0.2em 1em;
+                border-radius: 0.5em;
+
+                &:active {
+                    background: rgb(var(--np-button-active-bg));
+                }
+
+                &:disabled {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    .np-time-wheel {
+        width: 100%;
+        -webkit-user-select: none;
+        user-select: none;
+        isolation: isolate;
+        overflow: hidden;
+
+        .np-time-scroller {
+            width: 100%;
+            height: 2em;
+            position: relative;
+            overflow: clip;
+            perspective: 1000px;
+
+            .np-time-tick {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                cursor: default;
+                transition: font-weight 0.2s;
+
+                &.is-current {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

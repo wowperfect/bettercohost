@@ -1,0 +1,59 @@
+/* code by kiophen */
+
+article.cohost-shadow-light .prose p {
+  line-height: 1.25em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+article.cohost-shadow-light .prose li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+article.cohost-shadow-light .prose h1,
+article.cohost-shadow-light .prose h2,
+article.cohost-shadow-light .prose h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+main section div.gap-12 {
+  gap: 2em;
+}
+
+article>header.p-3 {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+article>footer.p-3 {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+
+article>div>div.m-3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+article>div>div div.p-3 {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+main.w-full {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+ul.bg-sidebarBg li {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.amgg__viewsource__view-source-button span {
+  /* for the view-source script compatibility */
+  padding: 0;
+}

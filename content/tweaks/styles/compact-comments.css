@@ -1,0 +1,38 @@
+/* code by kiophen */
+
+/* gap to left of avatar */
+article[data-comment-id*="-"] {
+  gap: 0;
+}
+
+/* shrink the huge gap left of nested comments */
+article[data-comment-id*="-"]>div[style*="width"] {
+  width: 0 !important;
+  margin: 0 0.2rem;
+}
+
+/* border to indicate where the reply is to */
+article[data-comment-id*="-"]~div {
+  border-left: 3px solid comment_color;
+  margin: 0;
+  padding-left: 1rem;
+  margin-top: -1rem;
+  padding-top: 1rem;
+}
+
+/* shrink avatar */
+article[data-comment-id*="-"] a[title^="@"] {
+  height: 2rem;
+  width: 2rem;
+}
+
+/* let comment body use space below avatar */
+article[data-comment-id*="-"] div.prose {
+  margin-left: -3rem;
+}
+
+/* let reply button use space below avatar too */
+article[data-comment-id*="-"] div.prose~div.items-center {
+  margin-left: -3rem;
+  margin-top: -0.75rem;
+}
